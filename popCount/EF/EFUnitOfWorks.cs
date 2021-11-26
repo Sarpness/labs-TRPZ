@@ -16,8 +16,7 @@ namespace popCount.EF
     {
         private cityContext db;
         private CityRepository cityRepository;
-        private TaskRepository taskRepository;
-​
+        private TaskRepository taskRepository;        
         public EFUnitOfWork(DbContextOptions options)
         {
             db = new cityContext(options);
@@ -49,7 +48,6 @@ namespace popCount.EF
         }
 
         private bool disposed = false;
-​
         public virtual void Dispose(bool disposing)
         {
             if (!this.disposed)

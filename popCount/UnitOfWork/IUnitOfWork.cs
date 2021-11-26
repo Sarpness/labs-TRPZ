@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace popCount.UnitOfWork
 {
-    internal interface IUnitOfWork
+    public interface IUnitOfWork
         : IDisposable
     {
         ICityRepository citys { get; }

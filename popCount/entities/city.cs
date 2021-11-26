@@ -12,5 +12,6 @@ namespace popCount.entities
         public int cityId { get; set; }
         public string cityName { get; set; }
         public int count { get; set; }
+        public int update_at { get; set; }
     }
 }

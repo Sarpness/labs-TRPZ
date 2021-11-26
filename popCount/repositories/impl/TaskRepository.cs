@@ -10,14 +10,14 @@ using System.Threading.Tasks;
 
 namespace popCount.repositories.impl
 {
-    internal class TaskRepository
+    public class TaskRepository
         : BaseRepository<task>, ITaskRepository
     {
         public TaskRepository(DbContext context) : base(context)
         {
         }
 
-        internal TaskRepository(taskContext context) : base(context)
+        public TaskRepository(taskContext context) : base(context)
         {
 
         }

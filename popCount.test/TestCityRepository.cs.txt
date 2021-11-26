@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace popCount.test
 {
-    internal class TestCityRepository
+    public class TestCityRepository
         : BaseRepository<city>
     {
         public TestCityRepository(DbContext context) 

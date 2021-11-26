@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 
 namespace popCount.repositories.impl
 {
-    internal class CityRepository
+    public class CityRepository
         : BaseRepository<city>, ICityRepository
     {
-        internal CityRepository(cityContext context) : base(context)
+        public CityRepository(cityContext context) : base(context)
         {
         }
     }

@@ -21,15 +21,6 @@ namespace popCount.test
         }
     }
 
-    class TestTaskRepository
-        : BaseRepository<city>
-    {
-        public TestTaskRepository(DbContext context)
-            : base(context)
-        {
-        }
-    }
-
     public class BaseRepositoryUnitTests
     {
         [Fact]

@@ -44,11 +44,6 @@ namespace popCount.repositories.impl
                     .ToList();
         }
 
-        public IEnumerable<T> Find(Func<T, bool> predicate)
-        {
-            throw new NotImplementedException();
-        }
-
         public T Get(int id)
         {
             return _set.Find(id);

@@ -45,25 +45,25 @@ namespace BLL.Tests
         }
 
         [Fact]
-        public void GetStreets_StreetFromDAL_CorrectMappingToStreetDTO()
+        public void GetCityes_CityFromDAL_CorrectMappingToStreetDTO()
         {
             // Arrange
             User user = new Boss(1, "test", 1);
             SecurityContext.SetUser(user);
-            var streetService = GetStreetService();
+            var cityService = GetCityService();
 
             // Act
-            var actualStreetDto = streetService.GetCityes(0).First();
+            var actualCityDto = cityService.GetCityes(0).First();
         
             // Assert
             Assert.True(
-                actualStreetDto.cityId == 1
-                && actualStreetDto.cityName == "testN"
-                && actualStreetDto.count == 1000
+                actualCityDto.cityId == 1
+                && actualCityDto.cityName == "testN"
+                && actualCityDto.count == 1000
             );
         }
 
-        ICityesService GetStreetService()
+        ICityesService GetCityService()
         {
             var mockContext = new Mock<IUnitOfWork>();
             var expectedCity = new city()
